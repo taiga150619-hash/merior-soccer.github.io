@@ -3,665 +3,598 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="横浜市都筑区の小学生向けメリオールサッカースクール。初心者からサッカーが上手くなりたい選手まで、一人ひとりに合った環境を提供します。">
+
 <title>メリオールサッカースクール｜横浜</title>
 
 <style>
+
 :root{
---blue:#063B73;
---blue-bright:#075AA5;
---blue-light:#EEF6FF;
---yellow:#FFD400;
---yellow-dark:#E5BC00;
---white:#fff;
---black:#222;
---gray:#666;
---red:#E53935;
+    --blue:#063B73;
+    --blue-bright:#075AA5;
+    --blue-light:#EEF6FF;
+    --yellow:#FFD400;
+    --yellow-dark:#E5BC00;
+    --white:#FFFFFF;
+    --black:#222222;
+    --gray:#666666;
+    --red:#E53935;
 }
 
-*{box-sizing:border-box}
+*{
+    box-sizing:border-box;
+}
 
-html{scroll-behavior:smooth}
+html{
+    scroll-behavior:smooth;
+}
 
 body{
-margin:0;
-font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP",
-"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
-color:var(--black);
-background:#fff;
-line-height:1.8;
+    margin:0;
+    font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Noto Sans JP",
+    "Hiragino Kaku Gothic ProN",
+    Meiryo,
+    sans-serif;
+    color:var(--black);
+    background:white;
+    line-height:1.8;
 }
 
+
+/* =========================
+ヘッダー
+========================= */
+
 header{
-background:var(--blue);
-color:#fff;
-padding:12px 6%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-position:sticky;
-top:0;
-z-index:1000;
-border-bottom:4px solid var(--yellow);
+    background:var(--blue);
+    color:white;
+    padding:12px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    border-bottom:4px solid var(--yellow);
 }
 
 .logo{
-display:flex;
-align-items:center;
-gap:10px;
-font-size:19px;
-font-weight:900;
-white-space:nowrap;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:20px;
+    font-weight:900;
+    white-space:nowrap;
 }
 
-.logo-mark{
-width:42px;
-height:42px;
-border:2px solid var(--yellow);
-border-radius:50%;
-display:grid;
-place-items:center;
-color:var(--yellow);
-font-size:20px;
+.logo img{
+    width:42px;
+    height:42px;
+    object-fit:contain;
 }
 
-.logo span{color:var(--yellow)}
+.logo span{
+    color:var(--yellow);
+}
 
 nav{
-overflow-x:auto;
-white-space:nowrap;
+    overflow-x:auto;
+    white-space:nowrap;
 }
 
 nav a{
-color:#fff;
-text-decoration:none;
-margin-left:15px;
-font-size:13px;
-font-weight:800;
+    color:white;
+    text-decoration:none;
+    margin-left:15px;
+    font-size:13px;
+    font-weight:800;
 }
 
-nav a:hover{color:var(--yellow)}
+nav a:hover{
+    color:var(--yellow);
+}
+
+
+/* =========================
+トップ
+========================= */
 
 .hero{
-background:linear-gradient(
-135deg,
-var(--blue),
-#07559C 65%,
-#0B70C9
-);
-color:#fff;
-text-align:center;
-padding:90px 20px 80px;
-position:relative;
-overflow:hidden;
-}
+    background:
+    linear-gradient(
+        135deg,
+        var(--blue),
+        var(--blue-bright)
+    );
 
-.hero:before,
-.hero:after{
-content:"";
-position:absolute;
-background:var(--yellow);
-border-radius:50%;
-opacity:.12;
-}
-
-.hero:before{
-width:360px;
-height:360px;
-top:-190px;
-right:-100px;
-}
-
-.hero:after{
-width:250px;
-height:250px;
-bottom:-130px;
-left:-80px;
-}
-
-.hero-content{
-position:relative;
-z-index:2;
-}
-
-.hero-logo{
-width:105px;
-height:105px;
-margin:0 auto 18px;
-border:4px solid var(--yellow);
-border-radius:50%;
-display:grid;
-place-items:center;
-background:rgba(255,255,255,.08);
-font-size:47px;
-box-shadow:0 0 0 8px rgba(255,212,0,.12);
+    color:white;
+    text-align:center;
+    padding:100px 20px 90px;
 }
 
 .hero h1{
-font-size:42px;
-margin:0 0 10px;
-font-weight:900;
+    font-size:42px;
+    margin:0 0 15px;
+    font-weight:900;
 }
 
 .hero h2{
-font-size:25px;
-margin:8px 0;
-color:var(--yellow);
-font-weight:900;
+    font-size:25px;
+    color:var(--yellow);
+    margin:10px 0;
+    font-weight:900;
 }
 
 .hero p{
-font-size:17px;
-margin:8px 0;
+    font-size:17px;
 }
 
 .btn{
-display:inline-block;
-background:var(--yellow);
-color:var(--blue);
-padding:13px 28px;
-border-radius:40px;
-text-decoration:none;
-font-weight:900;
-margin-top:18px;
-box-shadow:0 5px 0 var(--yellow-dark);
-transition:.2s;
+    display:inline-block;
+    background:var(--yellow);
+    color:var(--blue);
+    padding:14px 30px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:900;
+    margin-top:18px;
+    box-shadow:0 4px 0 var(--yellow-dark);
 }
 
 .btn:hover{
-transform:translateY(2px);
-box-shadow:0 3px 0 var(--yellow-dark);
+    transform:translateY(2px);
 }
 
+
+/* =========================
+共通セクション
+========================= */
+
 section{
-padding:70px 7%;
-max-width:1150px;
-margin:auto;
+    padding:70px 7%;
+    max-width:1150px;
+    margin:auto;
 }
 
 .title{
-text-align:center;
-margin-bottom:40px;
+    text-align:center;
+    margin-bottom:40px;
 }
 
 .title h2{
-font-size:32px;
-color:var(--blue);
-margin:0;
-font-weight:900;
+    font-size:32px;
+    color:var(--blue);
+    margin:0;
+    font-weight:900;
 }
 
-.title h2:after{
-content:"";
-display:block;
-width:60px;
-height:5px;
-background:var(--yellow);
-margin:12px auto 0;
-border-radius:5px;
+.title h2::after{
+    content:"";
+    display:block;
+    width:60px;
+    height:5px;
+    background:var(--yellow);
+    margin:12px auto 0;
+    border-radius:5px;
 }
 
-.title p{color:var(--gray)}
+.title p{
+    color:var(--gray);
+}
+
+
+/* =========================
+メリオールについて
+========================= */
 
 .cards{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:22px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
 }
 
 .card{
-background:#fff;
-padding:28px;
-border-radius:18px;
-border-top:6px solid var(--yellow);
-box-shadow:0 5px 20px rgba(6,59,115,.12);
+    background:white;
+    padding:28px;
+    border-radius:18px;
+    border-top:6px solid var(--yellow);
+    box-shadow:0 5px 20px rgba(6,59,115,0.12);
 }
 
 .card h3{
-color:var(--blue);
-margin-top:0;
-font-size:21px;
+    color:var(--blue);
+    margin-top:0;
+    font-size:21px;
 }
 
-/* サッカーを始める理由 */
+
+/* =========================
+始める理由
+========================= */
 
 #reason{
-background:var(--blue-light);
-max-width:none;
+    background:var(--blue-light);
+    max-width:none;
+    padding-left:7%;
+    padding-right:7%;
 }
 
 .reason-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:22px;
-max-width:1050px;
-margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
 }
 
 .reason-card{
-background:#fff;
-border-radius:20px;
-padding:30px 24px;
-text-align:center;
-box-shadow:0 5px 20px rgba(6,59,115,.12);
-border-bottom:6px solid var(--yellow);
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    border:2px solid var(--yellow);
+    box-shadow:0 5px 20px rgba(6,59,115,0.12);
 }
 
 .reason-icon{
-width:65px;
-height:65px;
-border-radius:50%;
-margin:0 auto 15px;
-display:grid;
-place-items:center;
-background:var(--blue);
-color:var(--yellow);
-font-size:29px;
+    font-size:42px;
 }
 
 .reason-card h3{
-color:var(--blue);
-font-size:20px;
-margin:8px 0 12px;
+    color:var(--blue);
+    font-size:20px;
 }
 
-.reason-card strong{
-color:var(--red);
-}
 
-/* クラス・料金 */
+/* =========================
+料金
+========================= */
 
 #class{
-background:#fff;
-max-width:none;
-padding-left:7%;
-padding-right:7%;
+    background:var(--blue-light);
+    max-width:none;
+    padding-left:7%;
+    padding-right:7%;
 }
 
 .price-table-wrapper{
-width:100%;
-overflow-x:auto;
--webkit-overflow-scrolling:touch;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(6,59,115,.12);
+    width:100%;
+    overflow-x:auto;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(6,59,115,0.12);
 }
 
 .price-table{
-width:100%;
-min-width:720px;
-border-collapse:collapse;
-background:#fff;
+    width:100%;
+    min-width:720px;
+    border-collapse:collapse;
+    background:white;
 }
 
 .price-table th{
-background:var(--blue);
-color:#fff;
-padding:16px 12px;
-text-align:center;
-font-weight:800;
+    background:var(--blue);
+    color:white;
+    padding:15px 10px;
+    text-align:center;
 }
 
 .price-table td{
-padding:16px 12px;
-border-bottom:1px solid #DDE5EC;
-text-align:center;
-font-size:15px;
+    padding:15px 10px;
+    border-bottom:1px solid #DDE5EC;
+    text-align:center;
 }
 
 .price-table td:nth-child(2){
-text-align:left;
-font-weight:600;
-}
-
-.price-table tr:last-child td{
-border-bottom:none;
-}
-
-.price-table tbody tr:hover{
-background:#FFFBE6;
+    text-align:left;
+    font-weight:700;
 }
 
 .plan{
-display:inline-block;
-padding:5px 10px;
-border-radius:20px;
-font-size:13px;
-font-weight:900;
-white-space:nowrap;
+    display:inline-block;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:900;
+    white-space:nowrap;
 }
 
 .plan-standard{
-background:var(--blue);
-color:#fff;
+    background:var(--blue);
+    color:white;
 }
 
 .plan-special{
-background:var(--yellow);
-color:var(--blue);
+    background:var(--yellow);
+    color:var(--blue);
 }
 
 .plan-development{
-background:var(--red);
-color:#fff;
+    background:var(--red);
+    color:white;
 }
 
 .price-number{
-font-size:18px;
-font-weight:900;
-color:var(--blue);
-white-space:nowrap;
+    font-size:17px;
+    font-weight:900;
+    color:var(--blue);
+    white-space:nowrap;
 }
 
 .admission{
-margin:25px auto 0;
-max-width:700px;
-background:var(--blue);
-color:#fff;
-padding:20px;
-border-radius:15px;
-text-align:center;
-font-weight:800;
-font-size:18px;
+    margin-top:22px;
+    background:var(--blue);
+    color:white;
+    padding:18px;
+    border-radius:15px;
+    text-align:center;
+    font-weight:800;
 }
 
 .admission strong{
-color:var(--yellow);
-font-size:22px;
+    color:var(--yellow);
+    font-size:22px;
 }
 
-/* イベント */
+
+/* =========================
+イベント
+========================= */
 
 #event{
-background:var(--blue-light);
-max-width:none;
-padding-left:7%;
-padding-right:7%;
+    max-width:none;
+    padding-left:7%;
+    padding-right:7%;
 }
 
 .event-card{
-background:#fff;
-padding:35px;
-border-radius:20px;
-border-left:8px solid var(--yellow);
-box-shadow:0 5px 20px rgba(6,59,115,.12);
-margin-bottom:25px;
+    background:white;
+    padding:32px;
+    border-radius:20px;
+    border-left:8px solid var(--yellow);
+    box-shadow:0 5px 20px rgba(6,59,115,0.12);
+    margin-bottom:25px;
 }
 
 .event-card h3{
-color:var(--blue);
-font-size:25px;
-margin-top:0;
+    color:var(--blue);
+    font-size:25px;
+    margin-top:10px;
 }
 
 .event-label{
-display:inline-block;
-background:var(--yellow);
-color:var(--blue);
-font-weight:900;
-padding:5px 14px;
-border-radius:20px;
-margin-bottom:10px;
+    display:inline-block;
+    background:var(--yellow);
+    color:var(--blue);
+    font-weight:900;
+    padding:5px 14px;
+    border-radius:20px;
 }
 
-/* コーチ */
+
+/* =========================
+コーチ紹介
+========================= */
 
 #coach{
-background:var(--blue);
-max-width:none;
-padding-left:7%;
-padding-right:7%;
+    max-width:none;
+    background:var(--blue);
+    padding-left:7%;
+    padding-right:7%;
 }
 
-#coach .title h2{color:#fff}
-
-#coach .title p{color:#fff}
+#coach .title h2,
+#coach .title p{
+    color:white;
+}
 
 .coach-grid{
-max-width:1100px;
-margin:auto;
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:28px;
+    max-width:1000px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:28px;
 }
 
 .coach-card{
-background:#fff;
-border-radius:24px;
-overflow:hidden;
-box-shadow:0 8px 25px rgba(0,0,0,.18);
+    background:white;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,0.2);
 }
 
 .coach-photo{
-width:100%;
-height:390px;
-object-fit:cover;
-object-position:center 25%;
-display:block;
+    width:100%;
+    height:380px;
+    object-fit:cover;
+    display:block;
 }
 
 .coach-body{
-padding:27px;
+    padding:28px;
 }
 
-.coach-name{
-color:var(--blue);
-font-size:29px;
-font-weight:900;
-margin:0 0 2px;
+.coach-body h3{
+    color:var(--blue);
+    font-size:28px;
+    margin:0;
 }
 
-.coach-nickname{
-color:var(--yellow-dark);
-font-weight:900;
-font-size:16px;
-margin-bottom:18px;
+.nickname{
+    color:var(--blue-bright);
+    font-weight:900;
 }
 
-.coach-label{
-display:inline-block;
-background:var(--blue);
-color:var(--yellow);
-padding:4px 12px;
-border-radius:15px;
-font-size:13px;
-font-weight:900;
-margin:8px 0;
+.coach-body h4{
+    color:var(--blue);
+    margin-bottom:5px;
+    font-size:18px;
 }
 
-.coach-body p{
-margin:7px 0;
-}
 
-.coach-message{
-margin-top:16px!important;
-padding:16px;
-background:var(--blue-light);
-border-left:5px solid var(--yellow);
-border-radius:10px;
-}
-
-/* アクセス */
+/* =========================
+アクセス
+========================= */
 
 #access{
-background:var(--blue-light);
-max-width:none;
-padding-left:7%;
-padding-right:7%;
+    background:var(--blue-light);
+    max-width:none;
+    padding-left:7%;
+    padding-right:7%;
 }
 
 .access-card{
-max-width:850px;
-margin:auto;
-background:#fff;
-padding:35px;
-border-radius:20px;
-border-top:7px solid var(--yellow);
-box-shadow:0 5px 20px rgba(6,59,115,.12);
-text-align:center;
+    max-width:850px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    border-top:7px solid var(--yellow);
+    box-shadow:0 5px 20px rgba(6,59,115,0.12);
+    text-align:center;
 }
 
 .access-card h3{
-color:var(--blue);
-font-size:26px;
-margin-top:0;
+    color:var(--blue);
 }
 
 .address{
-font-size:17px;
-font-weight:600;
-margin:20px 0;
+    font-size:17px;
+    font-weight:700;
+    margin:20px 0;
 }
 
 .tel{
-font-size:22px;
-font-weight:900;
-color:var(--blue);
+    font-size:22px;
+    font-weight:900;
+    color:var(--blue);
 }
 
-/* お問い合わせ */
+
+/* =========================
+無料体験
+========================= */
 
 .contact{
-max-width:none;
-background:linear-gradient(
-135deg,
-#EEF6FF,
-#FFF
-);
-text-align:center;
-border-top:8px solid var(--yellow);
+    max-width:none;
+    background:linear-gradient(
+        135deg,
+        var(--blue-light),
+        white
+    );
+    text-align:center;
+    border-top:8px solid var(--yellow);
 }
 
 .contact-info{
-font-size:19px;
-font-weight:700;
-color:var(--blue);
+    font-size:19px;
+    font-weight:700;
+    color:var(--blue);
 }
 
-/* フッター */
+
+/* =========================
+フッター
+========================= */
 
 footer{
-background:var(--blue);
-color:#fff;
-text-align:center;
-padding:35px 20px;
-border-top:5px solid var(--yellow);
+    background:var(--blue);
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+    border-top:5px solid var(--yellow);
 }
 
 footer strong{
-color:var(--yellow);
+    color:var(--yellow);
 }
 
-/* スマホ */
 
-@media(max-width:800px){
+/* =========================
+スマホ
+========================= */
 
-header{
-display:block;
-text-align:center;
-padding:10px;
-}
+@media(max-width:700px){
 
-.logo{
-justify-content:center;
-font-size:17px;
-margin-bottom:8px;
-}
+    header{
+        display:block;
+        text-align:center;
+        padding:12px 8px;
+    }
 
-nav a{
-margin:0 6px;
-font-size:11px;
-}
+    .logo{
+        justify-content:center;
+        font-size:18px;
+        margin-bottom:8px;
+    }
 
-.hero{
-padding:65px 18px 60px;
-}
+    nav a{
+        margin:0 6px;
+        font-size:11px;
+    }
 
-.hero h1{
-font-size:31px;
-}
+    .hero{
+        padding:70px 18px;
+    }
 
-.hero h2{
-font-size:21px;
-}
+    .hero h1{
+        font-size:30px;
+    }
 
-.hero p{
-font-size:15px;
-}
+    .hero h2{
+        font-size:21px;
+    }
 
-section{
-padding:55px 20px;
-}
+    .hero p{
+        font-size:15px;
+    }
 
-.title h2{
-font-size:27px;
-}
+    section{
+        padding:55px 20px;
+    }
 
-.cards,
-.reason-grid,
-.coach-grid{
-grid-template-columns:1fr;
-}
+    .title h2{
+        font-size:27px;
+    }
 
-.card,
-.reason-card{
-padding:24px;
-}
+    .cards,
+    .reason-grid,
+    .coach-grid{
+        grid-template-columns:1fr;
+    }
 
-.coach-photo{
-height:420px;
-}
+    .card,
+    .reason-card{
+        padding:24px;
+    }
 
-#class,
-#event,
-#coach,
-#access{
-padding-left:20px;
-padding-right:20px;
-}
+    #class,
+    #event,
+    #coach,
+    #access{
+        padding-left:20px;
+        padding-right:20px;
+    }
 
-.event-card{
-padding:25px;
-}
+    .price-table{
+        min-width:700px;
+    }
 
-.price-table{
-min-width:720px;
-}
+    .coach-photo{
+        height:400px;
+    }
 
-.price-table th,
-.price-table td{
-padding:12px 9px;
-font-size:13px;
-}
-
-.price-number{
-font-size:16px;
-}
-
-.access-card{
-padding:25px 18px;
-}
+    .access-card{
+        padding:25px 18px;
+    }
 
 }
 
-@media(max-width:400px){
-
-.hero h1{
-font-size:27px;
-}
-
-.hero h2{
-font-size:19px;
-}
-
-.btn{
-padding:12px 23px;
-}
-
-}
 </style>
 </head>
 
+
 <body>
+
 
 <!-- ヘッダー -->
 
@@ -669,13 +602,12 @@ padding:12px 23px;
 
 <div class="logo">
 
-<div class="logo-mark">⚽</div>
+<img src="emblem.png" alt="メリオールエンブレム">
 
-<div>
 <span>メリオール</span>サッカースクール
-</div>
 
 </div>
+
 
 <nav>
 
@@ -702,12 +634,6 @@ padding:12px 23px;
 
 <div class="hero">
 
-<div class="hero-content">
-
-<div class="hero-logo">
-⚽
-</div>
-
 <h1>
 メリオールサッカースクール
 </h1>
@@ -730,8 +656,6 @@ padding:12px 23px;
 
 </div>
 
-</div>
-
 
 <!-- メリオールについて -->
 
@@ -749,7 +673,9 @@ padding:12px 23px;
 
 </div>
 
+
 <div class="cards">
+
 
 <div class="card">
 
@@ -789,6 +715,7 @@ padding:12px 23px;
 
 </div>
 
+
 </div>
 
 </section>
@@ -806,12 +733,14 @@ padding:12px 23px;
 </h2>
 
 <p>
-初めての一歩から、もっと上手くなりたい選手まで。
+初めての子も、もっと上手くなりたい子も安心してスタートできます。
 </p>
 
 </div>
 
+
 <div class="reason-grid">
+
 
 <div class="reason-card">
 
@@ -821,12 +750,11 @@ padding:12px 23px;
 
 <h3>
 サッカーボール・<br>
-トレーニングシューズ
+トレーニングシューズ無料体験
 </h3>
 
 <p>
-<strong>無料体験</strong>をご用意しています。
-道具がなくても気軽にサッカーを始められます。
+サッカーボール・トレーニングシューズを無料で体験できます。
 </p>
 
 </div>
@@ -839,13 +767,11 @@ padding:12px 23px;
 </div>
 
 <h3>
-入会1ヶ月目まで<br>
-無料貸出
+入会1ヶ月目まで無料貸出
 </h3>
 
 <p>
-サッカーボール・トレーニングシューズを、
-<strong>入会1ヶ月目まで無料貸出</strong>します。
+入会1ヶ月目まではサッカーボール・トレーニングシューズを無料貸出。
 </p>
 
 </div>
@@ -854,20 +780,19 @@ padding:12px 23px;
 <div class="reason-card">
 
 <div class="reason-icon">
-✨
+🌟
 </div>
 
 <h3>
-料金プランの<br>
-種類が豊富！！
+料金プランの種類が豊富！！
 </h3>
 
 <p>
-スポーツが初めての子からサッカーがうまくなりたい子まで、
-<strong>一人ひとりに合ったプラン</strong>がございます。
+スポーツが初めての子からサッカーがうまくなりたい子まで、一人ひとりに合ったプランがございます。
 </p>
 
 </div>
+
 
 </div>
 
@@ -890,6 +815,7 @@ padding:12px 23px;
 
 </div>
 
+
 <div class="price-table-wrapper">
 
 <table class="price-table">
@@ -898,29 +824,21 @@ padding:12px 23px;
 
 <tr>
 
-<th>
-プラン
-</th>
+<th>プラン</th>
 
-<th>
-内容
-</th>
+<th>内容</th>
 
-<th>
-U-9<br>
-1〜3年
-</th>
+<th>U-9<br>1〜3年</th>
 
-<th>
-U-12<br>
-4〜6年
-</th>
+<th>U-12<br>4〜6年</th>
 
 </tr>
 
 </thead>
 
+
 <tbody>
+
 
 <tr>
 
@@ -934,16 +852,12 @@ U-12<br>
 通常クラス 週1回
 </td>
 
-<td>
-<span class="price-number">
+<td class="price-number">
 7,400円/月
-</span>
 </td>
 
-<td>
-<span class="price-number">
+<td class="price-number">
 7,950円/月
-</span>
 </td>
 
 </tr>
@@ -961,16 +875,12 @@ U-12<br>
 通常クラス 週2回
 </td>
 
-<td>
-<span class="price-number">
+<td class="price-number">
 11,100円/月
-</span>
 </td>
 
-<td>
-<span class="price-number">
+<td class="price-number">
 11,920円/月
-</span>
 </td>
 
 </tr>
@@ -989,16 +899,12 @@ U-12<br>
 17:00〜19:00
 </td>
 
-<td>
-<span class="price-number">
+<td class="price-number">
 5,000円/月
-</span>
 </td>
 
-<td>
-<span class="price-number">
+<td class="price-number">
 5,000円/月
-</span>
 </td>
 
 </tr>
@@ -1016,16 +922,12 @@ U-12<br>
 1回参加
 </td>
 
-<td>
-<span class="price-number">
+<td class="price-number">
 3,000円/回
-</span>
 </td>
 
-<td>
-<span class="price-number">
+<td class="price-number">
 3,000円/回
-</span>
 </td>
 
 </tr>
@@ -1043,16 +945,12 @@ U-12<br>
 通常週1＋スペシャル月2回
 </td>
 
-<td>
-<span class="price-number">
+<td class="price-number">
 12,000円/月
-</span>
 </td>
 
-<td>
-<span class="price-number">
+<td class="price-number">
 12,500円/月
-</span>
 </td>
 
 </tr>
@@ -1070,19 +968,16 @@ U-12<br>
 通常週2＋スペシャル月2回
 </td>
 
-<td>
-<span class="price-number">
+<td class="price-number">
 15,500円/月
-</span>
 </td>
 
-<td>
-<span class="price-number">
+<td class="price-number">
 16,000円/月
-</span>
 </td>
 
 </tr>
+
 
 </tbody>
 
@@ -1093,7 +988,7 @@ U-12<br>
 
 <div class="admission">
 
-入会金・年会費　
+入会金・年会費
 
 <strong>
 5,500円
@@ -1136,13 +1031,11 @@ U-12<br>
 </h4>
 
 <p>
-普段とは違うメンバーと月1回の
-フットサルゲーム会。
+普段とは違うメンバーと月1回のフットサルゲーム会。
 </p>
 
 <p>
-メリオールで培った技術を思う存分に発揮し、
-試合経験を増やしましょう！！
+メリオールで培った技術を思う存分に発揮し、試合経験を増やしましょう！！
 </p>
 
 </div>
@@ -1159,19 +1052,11 @@ U-12<br>
 </h3>
 
 <h4>
-年4回のメリオールクリニック
-2時間スペシャル
+年4回のメリオールクリニック 2時間スペシャル
 </h4>
 
 <p>
-普段より多くの時間トレーニングを行い、
-2日から3日間の特別トレーニングを開催！！！
-</p>
-
-<p>
-技術力向上だけではなく、
-サッカーへの熱量をさらに高める
-特別なトレーニングイベントです。
+普段より多くの時間トレーニングを行い、2日から3日間の特別トレーニングを開催！！！
 </p>
 
 </div>
@@ -1190,7 +1075,7 @@ U-12<br>
 </h2>
 
 <p>
-子供たちと一緒に成長するコーチ陣
+子どもたちの成長を一緒にサポートします
 </p>
 
 </div>
@@ -1199,29 +1084,29 @@ U-12<br>
 <div class="coach-grid">
 
 
-<!-- 桃澤コーチ -->
+<!-- 桃澤惟 -->
 
-<article class="coach-card">
+<div class="coach-card">
 
 <img
 class="coach-photo"
-src="IMG_0016.jpeg"
+src="coach-yui.jpg"
 alt="桃澤惟コーチ"
 >
 
 <div class="coach-body">
 
-<h3 class="coach-name">
+<h3>
 桃澤 惟
 </h3>
 
-<div class="coach-nickname">
-桃澤コーチ
-</div>
+<p class="nickname">
+コーチ
+</p>
 
-<div class="coach-label">
+<h4>
 指導歴
-</div>
+</h4>
 
 <p>
 2025年〜2026年<br>
@@ -1233,92 +1118,74 @@ alt="桃澤惟コーチ"
 メリオールサッカースクール
 </p>
 
-<div class="coach-label">
-指導理念
-</div>
+<h4>
+コーチ理念
+</h4>
 
-<p class="coach-message">
-
-子供たちの目線にたち、
-子供達と一緒に体を動かすことで、
-まずはサッカーというスポーツを好きになってもらえるよう
-お手伝いします！
-
+<p>
+子供達の目線にたち、子供達と一緒に体を動かすことで、まずはサッカーというスポーツを好きになってもらえるようお手伝いします！
 </p>
 
 </div>
 
-</article>
+</div>
 
 
-<!-- 児玉コーチ -->
+<!-- 児玉大河 -->
 
-<article class="coach-card">
+<div class="coach-card">
 
 <img
 class="coach-photo"
-src="IMG_0022.jpeg"
+src="coach-taiga.jpg"
 alt="児玉大河コーチ"
 >
 
 <div class="coach-body">
 
-<h3 class="coach-name">
+<h3>
 児玉 大河 🐯
 </h3>
 
-<div class="coach-nickname">
+<p class="nickname">
 タイガコーチ・トラコーチ
-</div>
+</p>
 
-<div class="coach-label">
+<h4>
 指導歴
-</div>
+</h4>
 
 <p>
-
 2022年〜2023年<br>
-
 トセリアサッカースクール本校<br>
-
 トセリアサッカースクール東神奈川校
-
 </p>
 
 <p>
-
 2024年〜現在<br>
-
 メリオールサッカースクール
-
 </p>
 
-<div class="coach-label">
+<h4>
 指導理念
-</div>
+</h4>
 
-<p class="coach-message">
+<p>
+サッカーを通してチームスポーツの魅力を感じ成長する嬉しさ楽しさを肌で感じてください。
+</p>
 
-サッカーを通してチームスポーツの魅力を感じ、
-成長する嬉しさ・楽しさを肌で感じてください。
+<p>
+基礎技術の習慣化や長所を伸ばすことで中学、高校と進学する際につまずかない自信を手に入れましょう。
+</p>
 
-<br><br>
-
-基礎技術の習慣化や長所を伸ばすことで、
-中学・高校と進学する際につまずかない
-自信を手に入れましょう。
-
-<br><br>
-
-アジリティーでは全てのスポーツに通ずる
-土台作りを目的に、
-スポーツ人生の選択肢を広めましょう！！
-
+<p>
+アジリティーでは全てのスポーツに通ずる土台作りを目的にスポーツ人生の選択肢を広めましょう！！
 </p>
 
 </div>
 
-</article>
+</div>
+
 
 </div>
 
@@ -1355,7 +1222,6 @@ alt="児玉大河コーチ"
 <div class="address">
 
 〒224-0001<br>
-
 神奈川県横浜市都筑区中川８丁目７−２０
 
 </div>
@@ -1366,11 +1232,11 @@ TEL：045-591-0005
 
 </div>
 
+
 <a
 class="btn"
 href="https://www.google.com/maps/search/?api=1&query=神奈川県横浜市都筑区中川8丁目7-20"
-target="_blank"
->
+target="_blank">
 
 📍 Googleマップで場所を見る
 
@@ -1398,6 +1264,7 @@ target="_blank"
 
 </div>
 
+
 <div class="contact-info">
 
 <p>
@@ -1410,10 +1277,10 @@ target="_blank"
 
 </div>
 
+
 <a
 class="btn"
-href="mailto:meihor95@gmail.com"
->
+href="mailto:meihor95@gmail.com">
 
 🟡 メールで無料体験を申し込む
 
@@ -1441,6 +1308,7 @@ href="mailto:meihor95@gmail.com"
 </p>
 
 </footer>
+
 
 </body>
 </html>
